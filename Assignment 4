@@ -1,0 +1,1 @@
+SELECT ID, Dt, ABS(DATEDIFF(MONTH, Dt, MIN(Dt) OVER(PARTITION BY ID))) AS Diff_in_Month FROM Particle;
